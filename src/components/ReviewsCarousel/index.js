@@ -22,11 +22,11 @@ class ReviewsCarousel extends Component {
     const {imgUrl, username, companyName, description} = review
 
     return (
-      <div className="review-container">
+      <div className='review-container'>
         <img src={imgUrl} alt={username} />
-        <p className="username">{username}</p>
-        <p className="company">{companyName}</p>
-        <p className="description">{description}</p>
+        <p className='username'>{username}</p>
+        <p className='company'>{companyName}</p>
+        <p className='description'>{description}</p>
       </div>
     )
   }
@@ -47,30 +47,30 @@ class ReviewsCarousel extends Component {
     const currentReviewDetails = reviewsList[activeReviewIndex]
 
     return (
-      <div className="app-container">
-        <h1 className="heading">Reviews</h1>
-        <div className="carousel-container">
+      <div className='app-container'>
+        <h1 className='heading'>Reviews</h1>
+        <div className='carousel-container'>
           <button
-            type="button"
+            type='button'
             onClick={this.onClickLeftArrow}
-            testid="leftArrow"
-            className="arrow-button"
+            testid='leftArrow'
+            className='arrow-button'
           >
             <img
-              src="https://assets.ccbp.in/frontend/react-js/left-arrow-img.png"
-              alt="left arrow"
+              src='https://assets.ccbp.in/frontend/react-js/left-arrow-img.png'
+              alt='left arrow'
             />
           </button>
           {this.renderActiveReview(currentReviewDetails)}
           <button
-            type="button"
+            type='button'
             onClick={this.onClickRightArrow}
-            testid="rightArrow"
-            className="arrow-button"
+            testid='rightArrow'
+            className='arrow-button'
           >
             <img
-              src="https://assets.ccbp.in/frontend/react-js/right-arrow-img.png"
-              alt="right arrow"
+              src='https://assets.ccbp.in/frontend/react-js/right-arrow-img.png'
+              alt='right arrow'
             />
           </button>
         </div>
